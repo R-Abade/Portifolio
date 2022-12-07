@@ -99,7 +99,7 @@ section#inicio {
     color: black;
 }
 
-section#inicio div#coluna-1 {   
+section#inicio div#coluna-1 {
     color: rgb(9, 255, 0);
     display: flex;
     justify-content: center;
@@ -108,7 +108,7 @@ section#inicio div#coluna-1 {
     text-shadow: 4px 4px 10px black;
 }
 
-section#inicio h2{
+section#inicio h2 {
     font-size: 5rem;
 }
 
@@ -117,24 +117,87 @@ section#inicio span {
     font-size: 1.5;
 }
 
-section#inicio div#coluna-2{
+section#inicio div#coluna-2 {
     display: flex;
     justify-content: end;
     align-items: flex-end;
 }
-section#inicio div#arraste{
+
+section#inicio div#arraste {
     width: 9rem;
     display: flex;
     align-items: center;
 }
 
-section#inicio div#arraste a{
+section#inicio div#arraste a {
     text-decoration: none;
     color: rgb(9, 255, 0);
 }
 
-section#inicio i{
+section#inicio i {
     color: rgb(9, 255, 0);
     padding-right: 2px;
     font-size: 2rem;
+}
+
+i.menu-mobile {
+    position: fixed;
+    color: whitesmoke;
+    background-color: black;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 600px) {
+    .facet_sidebar {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) and (orientation: landscape) {}
+
+@media(max-width: 1024px) {
+    #header {
+        left: -300px;
+    }
+
+    i.menu-mobile {
+        display: none;
+    }
+
+    section#inicio h2 {
+        font-size: 3.5rem;
+    }
+
+    section#inicio span#subtitle {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-nav-active {
+        overflow: hidden;
+    }
+
+    .menu-nav-active #header {
+        left: 0;
+    }
 }
