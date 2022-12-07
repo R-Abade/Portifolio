@@ -152,20 +152,11 @@ i.menu-mobile {
     z-index: 10;
     width: 45px;
     height: 45px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
-
-
-@media (max-width: 600px) {
-    .facet_sidebar {
-        display: none;
-    }
-}
-
-@media (min-width: 700px) and (orientation: landscape) {}
 
 @media(max-width: 1024px) {
     #header {
@@ -173,7 +164,7 @@ i.menu-mobile {
     }
 
     i.menu-mobile {
-        display: none;
+        display: flex;
     }
 
     section#inicio h2 {
@@ -187,10 +178,6 @@ i.menu-mobile {
 
     #main {
         margin-left: 0;
-    }
-
-    .menu-mobile {
-        display: none;
     }
 
     .menu-nav-active {
