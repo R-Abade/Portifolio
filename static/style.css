@@ -170,6 +170,10 @@ i.menu-mobile {
     background-color: #3a3b46;
 }
 
+.section-bg{
+    background-color: gray;
+}
+
 
 @media(max-width: 1024px) {
     #header {
