@@ -6,6 +6,7 @@ body {
     width: 100%;
     height: 100%;
     color: black;
+    background: black;
 }
 
 #header {
@@ -156,24 +157,70 @@ i.menu-mobile {
     justify-content: center;
     align-items: center;
 }
+
 *::-webkit-scrollbar {
-    width:10px;
+    width: 10px;
 }
 
 *::-webkit-scrollbar-track {
-    width:12px;
+    width: 12px;
     box-shadow: inset 0 0 .3rem black;
     background-color: whitesmoke;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #3a3b46;
+    background-color: #474444;
 }
 
-.section-bg{
-    background-color: gray;
+.section-bg {
+    background-color: #474444;
 }
 
+.cv .cv-title {
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #08aa03;
+}
+
+.cv .cv-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid blue;
+    position: relative;
+    line-height: 18px;
+}
+
+.cv .cv-item h4 {
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #08aa03;
+    margin-bottom: 10px;
+}
+
+.cv .cv-item h5 {
+    background: #474444;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+.cv .cv-item::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid blue;
+    background: #474444;
+    border-radius: 50%;
+
+}
 
 @media(max-width: 1024px) {
     #header {
